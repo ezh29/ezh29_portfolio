@@ -29,25 +29,24 @@
 
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!--Unite Gallery -->
+    <script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>
+
+    <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+    <script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
 </head>
 
 <body>
-    <ul class="navi_side">
-        <li><a href="#box1" class="on"></a></li>
-        <li><a href="#box2"></a></li>
-        <li><a href="#box3"></a></li>
-        <li><a href="#box4"></a></li>
-        <li><a href="#box5"></a></li>
-        <li><a href="#box6"></a></li>
-    </ul>
-    <!--navi_side-->
+
     <div class="wrap">
         <header id="box1">
             <h1 class="text-center">Gray</h1>
             <h1 class="text-center">Sheep</h1>
         </header>
         <div class="container">
-            <div class="row skill topSpace" id="box2">
+            <div class="row skill topSpace" id="box1">
                 <div class="col-md-6 text-right">
                     <h2>Html/> <br> Css;} <br> jQuery}); <br>JavaScript}); <br> </h2>
                 </div>
@@ -58,7 +57,7 @@
         </div>
         <!--container end-->
         <div class="container-fluid">
-            <div class="row introduce" id="box3">
+            <div class="row introduce">
                 <div class="col-md-6 text-right"><img src="img/profile.png" alt="" style="width: 400px;"></div>
                 <div class="col-md-6">
                     <h3>Lee Ji Hyun <span>이지현 1991.12.29</span></h3>
@@ -125,9 +124,9 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th style="width: 15%">Category</th>
+                                    <th style="width: 10%">Category</th>
                                     <th style="width: 20%">Source</th>
-                                    <th style="width: 65%">Related keywords</th>
+                                    <th style="width: 70%">Related keywords</th>
                                 </tr>
                             </thead>
                             <tbody class="table-sm">
@@ -137,13 +136,53 @@
                                     <td>HTML5</td>
                                 </tr>
                                 <tr>
+                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                    <td><a href="">community.html</a></td>
+                                    <td>HTML5</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                    <td><a href="">story.html</a></td>
+                                    <td>HTML5</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                    <td><a href="">login.html</a></td>
+                                    <td>HTML5</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                    <td><a href="">join.html</a></td>
+                                    <td>HTML5</td>
+                                </tr>
+                                <tr>
                                     <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
                                     <td><a href="">style.css</a></td>
                                     <td>Responsive</td>
                                 </tr>
                                 <tr>
                                     <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a href="">custom.js</a></td>
+                                    <td><a href="">custom.js </a></td>
+                                    <td>JavaScript, jQuery</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                    <td><a href="">custom_sub.js</a></td>
+                                    <td>JavaScript, jQuery</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                    <td><a href="">parallax.min.js</a></td>
+                                    <td>JavaScript, jQuery</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                    <td><a href="">slider.js</a></td>
+                                    <td>JavaScript, jQuery</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                    <td><a href="">jquery.bxslider.js</a></td>
                                     <td>JavaScript, jQuery</td>
                                 </tr>
                             </tbody>
@@ -162,20 +201,71 @@
                         <h3>Etc</h3>
                     </div>
                 </div>
+                <div id="gallery" style="display:none;">
+                    <a href="#">
+		                <img alt="중원엔지니어링 로고 패키지" src="img/edit/01.png" data-image="img/edit/01.png" data-description="중원엔지니어링 로고 패키지" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="디자인 명함" src="img/edit/02.png" data-image="img/edit/02.png" data-description="디자인 명함" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="메이븐 미용실 명함" src="img/edit/03.png" data-image="img/edit/03.png" data-description="메이븐 미용실 명함" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="명다원 찻집 카다로그_01" src="img/edit/04_1.png" data-image="img/edit/04_1.png" data-description="명다원 찻집 카다로그_01" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="명다원 찻집 카다로그_02" src="img/edit/04_2.png" data-image="img/edit/04_2.png" data-description="명다원 찻집 카다로그_02" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="명다원 찻집 카다로그_03" src="img/edit/04_3.png" data-image="img/edit/04_3.png" data-description="명다원 찻집 카다로그_03" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="명다원 찻집 카다로그_04" src="img/edit/04_4.png" data-image="img/edit/04_4.png" data-description="명다원 찻집 카다로그_04" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="동영산업 카다로그_01" src="img/edit/05_1.png" data-image="img/edit/05_1.png" data-description="동영산업 카다로그_01" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="동영산업 카다로그_02" src="img/edit/05_2.png" data-image="img/edit/05_2.png" data-description="동영산업 카다로그_02" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="다나병원 카다로그_01" src="img/edit/06_1.png" data-image="img/edit/06_1.png" data-description="다나병원 카다로그_01" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="다나병원 카다로그_02" src="img/edit/06_2.png" data-image="img/edit/06_2.png" data-description="다나병원 카다로그_02" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="부토니아 3단 리플렛_01" src="img/edit/07_1.png" data-image="img/edit/07_1.png" data-description="부토니아 3단 리플렛_01" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="부토니아 3단 리플렛_02" src="img/edit/07_2.png" data-image="img/edit/07_2.png" data-description="부토니아 3단 리플렛_02" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="부토니아 3단 리플렛_03" src="img/edit/07_3.png" data-image="img/edit/07_3.png" data-description="부토니아 3단 리플렛_03" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="수원대학교 채용박람회 포스터" src="img/edit/08.png" data-image="img/edit/08.png" data-description="수원대학교 채용박람회 포스터" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="경하이엔지 회사소개서" src="img/edit/09.png" data-image="img/edit/09.png" data-description="경하이엔지 회사소개서" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="국민은행 트와이스 엽서 1차" src="img/edit/10_1.png" data-image="img/edit/10_1.png" data-description="국민은행 트와이스 엽서 1차" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="국민은행 트와이스 엽서 2차" src="img/edit/10_2.png" data-image="img/edit/10_2.png" data-description="국민은행 트와이스 엽서 2차" style="display:none">
+		            </a>
+                </div>
 
-                <!--<div class="grid">
-                    <div class="grid-item"><img src="img/edit/01.png" alt="" style="width:100%"></div>
-                    <div class="grid-item"><img src="img/edit/02.png" alt="" style="width:100%"></div>
-                    <div class="grid-item"><img src="img/edit/03.png" alt="" style="width:100%"></div>
-                    <div class="grid-item"><img src="img/edit/04.png" alt="" style="width:100%"></div>
-                    <div class="grid-item"><img src="img/edit/05.png" alt="" style="width:100%"></div>
-                    <div class="grid-item"><img src="img/edit/06.png" alt="" style="width:100%"></div>
-                    <div class="grid-item"><img src="img/edit/07.png" alt="" style="width:100%"></div>
-                    <div class="grid-item"><img src="img/edit/08.png" alt="" style="width:100%"></div>
-                    <div class="grid-item"><img src="img/edit/09.png" alt="" style="width:100%"></div>
-                    <div class="grid-item"><img src="img/edit/10.png" alt="" style="width:100%"></div>
+                <script type="text/javascript">
+                    jQuery(document).ready(function() {
 
-                </div>-->
+                        jQuery("#gallery").unitegallery({
+                            tiles_type: "justified"
+                        });
+                    });
+                </script>
             </div>
         </div>
         <!--container end-->

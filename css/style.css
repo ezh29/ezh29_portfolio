@@ -57,17 +57,18 @@ header::after {content: ""; display: block; border-bottom: solid 1px #e80000; bo
 .work dd {display: inline; font-size: 15px;}
 .work p {font-size: 15px; margin-bottom: 15px;}
 .workBtn {margin-top: 30px;}
-.workBtn a {display: inline-block; background: #425359; height: 40px; width: 90px; color:#fff; padding-top: 7px; border: solid 1px #425359; transition: all 0.3s; border-radius: 20px;}
+.workBtn a {display: inline-block; background: #425359; height: 40px; width: 90px; color:#fff; padding-top: 7px; border: solid 1px #425359; transition: all 0.3s; border-radius: 20px; }
 .workBtn a:hover {border: solid 1px #425359; background: #eee; color:#425359; text-decoration: none;}
 /*work table*/
-.table {margin-top: 20px;}
-.table  th {font:15px/1 'Nanum Gothic', sans-serif; background: #425359; color:#fff;}
-.table button {padding: 2px 10px;}
+.table {margin-top: 20px; font:13px/1 'Nanum Gothic', sans-serif; }
+.table  th {background: #425359; color:#fff;}
+.table button {padding: 2px 6px; font-size: 10px;}
 .table tr td {padding: 5px 10px;}
 .table a {color:#e80000;}
+.table a:hover {color:#e80000; text-decoration: none;}
 
 /*contect*/
-.contect {background: url("../img/contect_bg.png") center; background-size: cover; padding: 130px 0px; }
+.contect {background: url("../img/contect_bg.jpg") center; background-size: cover; padding: 130px 0px; margin-top: 200px;}
 .contect h4 span {font: 20px/1 'Nanum Gothic', sans-serif; display: block; margin-bottom: 50px; color:#e80000;}
 .contect h4 span::before {content: ""; display: block; height: 50px; width: 1px; background: #e80000; position: absolute; right: 50%; top:30px;}
 .contect h4 {font:bold 30px/1 'Nanum Gothic', sans-serif; color:#fff; margin-bottom: 50px; position: relative;}
