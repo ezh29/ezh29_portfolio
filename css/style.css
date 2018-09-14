@@ -8,14 +8,44 @@ font-family: 'Inknut Antiqua', serif;
 .wrap {background-color: #eee;}
 .topSpace {margin-top: 180px;}
 
+/*top 버튼*/
+body>a {height: 40px; width: 40px; box-shadow: 0 2px 10px 1px rgba(0,0,0,0.12); border-radius: 50%; color: #666; text-align: center; padding-top: 11px; position: fixed; background:#fff; right: 2%; z-index: 9; display: none; transition: all 0.5s; font-size: 12px;}
 
+#Move_Top{bottom: 20px;}
+#Move_Top:hover{color:#fff; background:#e80000; text-decoration: none}
 
 /*header*/
 header {width: 100%; height: 100vh; position:relative; background: url("../img/header_bg.png") no-repeat; background-size: contain; background-position: center; background-attachment:local; overflow: hidden; text-align: center;}
-header h1 {position: relative; top:50%; font:bold 60px/1 'Inknut Antiqua', serif; color:#e80000; display: inline-block; margin-top: -7%;}
+header h1 {position: relative; top:50%; font:bold 60px/1 'Inknut Antiqua', serif; color:#e80000; display: inline-block; margin-top: -7%; animation: shake 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);}
 header h1:nth-of-type(1)::after {content: ""; display: inline-block; width: 200px; height: 3px; background: #e80000; position: relative; top:-20px; margin: 0px 20px;}
 
-header::after {content: ""; display: block; border-bottom: solid 1px #e80000; border-right: solid 1px #e80000; width: 20px; height: 20px; position: absolute; bottom: 25px; right: 50%; margin-right: -10px; transform: rotate(45deg); animation: arrow 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;}/*헤더 스크롤 화살표*/
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+header .scrollDown {position: absolute; bottom: 30px; right: 50%; margin-right: -40px; font: 13px/1 'Nanum Gothic', sans-serif; color:#e80000; animation: arrow 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;}
+header .scrollDown::after {content: ""; display: block; border-bottom: solid 1px #e80000; border-right: solid 1px #e80000; width: 20px; height: 20px; position: absolute; bottom: -22px; right: 50%; margin-right: -10px; transform: rotate(45deg); }/*헤더 스크롤 화살표*/
 
 
 
@@ -30,7 +60,9 @@ header::after {content: ""; display: block; border-bottom: solid 1px #e80000; bo
 
 /*introduce*/
 .introduce { background: #fff; padding: 50px 0px; margin-top: 80px;}
-.introduce h3 {}
+.introduce>div {width: 940px; margin: 0 auto;}
+
+.introduce h3 {margin-top: 50px;}
 .introduce h3 span {font: 13px/1 'Nanum Gothic', sans-serif; color:#aaa;}
 .introduce h4 {font: 13px/1 'Nanum Gothic', sans-serif; color:#000;}
 .introduce h4::after {content: ""; display: block; width: 1px; height: 50px; background: #000; margin-top: 10px; margin-left: 3px;}
@@ -48,6 +80,7 @@ header::after {content: ""; display: block; border-bottom: solid 1px #e80000; bo
 .subTitle h3 {font:bold 40px/1 'Inknut Antiqua', serif; z-index: 1;}
 
 /*work*/
+.work {margin-bottom: 100px;}
 .work img {width: 100%;}
 .work .row div:nth-of-type(2) {padding-top: 30px;}
 .work h5 span {font:bold 50px/1 'Nanum Gothic', sans-serif; color:#e80000; margin-right: 10px;}
@@ -55,7 +88,10 @@ header::after {content: ""; display: block; border-bottom: solid 1px #e80000; bo
 .work dl {margin: 30px 0px;}
 .work dt {display: inline-block; width: 100px; font:15px/1 'Nanum Gothic', sans-serif; color:#e80000;}
 .work dd {display: inline; font-size: 15px;}
+.work dd span {display: inline-block; width: 15px; height: 15px; border-radius: 4px; vertical-align: middle; margin-right: 3px;}
+
 .work p {font-size: 15px; margin-bottom: 15px;}
+.work p span {color: #e80000;}
 .workBtn {margin-top: 30px;}
 .workBtn a {display: inline-block; background: #425359; height: 40px; width: 90px; color:#fff; padding-top: 7px; border: solid 1px #425359; transition: all 0.3s; border-radius: 20px; }
 .workBtn a:hover {border: solid 1px #425359; background: #eee; color:#425359; text-decoration: none;}
@@ -77,3 +113,33 @@ header::after {content: ""; display: block; border-bottom: solid 1px #e80000; bo
 .contect li:nth-last-child(1) {margin-bottom: 0px;}
 .contect a {color:#fff;}
 .contect a:hover {color:#fff; text-decoration: none;}
+
+
+
+
+/*타블렛*/
+@media screen and (min-width:640px) and (max-width:939px) {
+    
+    header h1:nth-of-type(1)::after {width: 100px;}
+    
+    .container {width: 90% !important;}
+    
+/*introduce*/
+.introduce>div {width: 90%; margin: 0 auto;}
+
+
+    
+}
+
+/*모바일*/
+@media screen and (min-width:0px) and (max-width:639px) {
+    
+header h1:nth-of-type(1) {position: relative; top:40%; display: block; margin-top: -7%;}
+header h1:nth-of-type(1)::after {content: ""; display: block; width: 200px; height: 3px; background: #e80000; position: relative; top:20px;  margin: 0px auto;}
+header h1:nth-of-type(2) {position: relative; top:50%; display: block; margin-top: -7%;}
+
+        .container {width: 90% !important;}
+
+    /*introduce*/
+.introduce>div {width: 90%; margin: 0 auto;}
+}

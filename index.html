@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css" />
 
 
     <!-- Bootstrap CSS -->
@@ -32,21 +32,37 @@
 
     <!--Unite Gallery -->
     <script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>
-
     <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
     <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
     <script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
 </head>
 
 <body>
-
+    <a href="#" id="Move_Top">TOP</a>
+    <script>
+        $(window).scroll(function() {
+            //$(this).scrollTop():현재 스크롤바의 위치
+            if ($(this).scrollTop() > 500) {
+                $('#Move_Top').fadeIn();
+            } else {
+                $('#Move_Top').fadeOut();
+            }
+        });
+        $('#Move_Top').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, "fast");
+            return false;
+        });
+    </script>
     <div class="wrap">
-        <header id="box1">
+        <header>
             <h1 class="text-center">Gray</h1>
             <h1 class="text-center">Sheep</h1>
+            <p class="scrollDown">Scroll Down</p>
         </header>
         <div class="container">
-            <div class="row skill topSpace" id="box1">
+            <div class="row skill topSpace">
                 <div class="col-md-6 text-right">
                     <h2>Html/> <br> Css;} <br> jQuery}); <br>JavaScript}); <br> </h2>
                 </div>
@@ -56,9 +72,9 @@
             </div>
         </div>
         <!--container end-->
-        <div class="container-fluid">
-            <div class="row introduce">
-                <div class="col-md-6 text-right"><img src="img/profile.png" alt="" style="width: 400px;"></div>
+        <div class="container-fluid introduce">
+            <div class="row ">
+                <div class="col-md-6"><img src="img/profile.png" alt="" style="width: 100%;"></div>
                 <div class="col-md-6">
                     <h3>Lee Ji Hyun <span>이지현 1991.12.29</span></h3>
                     <h4>a.k.a gray sheep</h4>
@@ -92,8 +108,8 @@
                 </div>
             </div>
 
-            <div class="works topSpace" id="box4">
-                <div class="row subTitle">
+            <div class="works topSpace">
+                <div class="row subTitle" id="fadeinbottom">
                     <div class="col text-center">
                         <h4>Port-folio</h4>
                         <h3>Works</h3>
@@ -110,13 +126,17 @@
                                 <dt>IE support</dt>
                                 <dd>IE9+</dd><br>
                                 <dt>Palette</dt>
-                                <dd>색상넣기</dd>
+                                <dd>
+                                    <span style="background:#2d4e3e"></span>
+                                    <span style="background:#414143"></span>
+                                    <span style="background:#999"></span>
+                                </dd>
                             </dl>
-                            <p><span>랜드로버 코리아</span>의 메인페이지와 서브페이지(회사소개, 부서소개, 회원가입, 로그인)를 반응형 페이지로 리뉴얼 하였습니다.</p>
-                            <p>미디어쿼리를 기반으로 반응형작업을 하였고, 작업 후반부터 Git을 이용한 버전관리를 하였습니다.</p>
+                            <p><span>랜드로버 코리아</span>의 메인페이지와 서브페이지<br>(회사소개, 부서소개, 회원가입, 로그인)를 <br><span>반응형 페이지</span>로 리뉴얼 하였습니다.</p>
+                            <p>미디어쿼리를 기반으로 반응형작업을 하였고, <br>작업 후반부터 <span>Git을 이용한 버전관리</span>를 하였습니다.</p>
                             <div class="workBtn text-center">
-                                <a href="#">Demo</a>
-                                <a href="#">Repos</a>
+                                <a target="_blank" href="https://ezh29.github.io/randrover/" >Demo</a>
+                                <a target="_blank" href="https://github.com/ezh29/randrover">Repos</a>
                             </div>
                         </div>
                     </div>
@@ -132,65 +152,146 @@
                             <tbody class="table-sm">
                                 <tr>
                                     <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a href="">index.html</a></td>
-                                    <td>HTML5</td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/index.html">index.html</a></td>
+                                    <td>HTML5, Responsive</td>
                                 </tr>
                                 <tr>
                                     <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a href="">community.html</a></td>
-                                    <td>HTML5</td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/community.html">community.html</a></td>
+                                    <td>HTML5, Responsive</td>
                                 </tr>
                                 <tr>
                                     <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a href="">story.html</a></td>
-                                    <td>HTML5</td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/story.html">story.html</a></td>
+                                    <td>HTML5, Responsive</td>
                                 </tr>
                                 <tr>
                                     <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a href="">login.html</a></td>
-                                    <td>HTML5</td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/login.html">login.html</a></td>
+                                    <td>HTML5, Responsive</td>
                                 </tr>
                                 <tr>
                                     <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a href="">join.html</a></td>
-                                    <td>HTML5</td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/join.html">join.html</a></td>
+                                    <td>HTML5, Responsive</td>
                                 </tr>
                                 <tr>
                                     <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
-                                    <td><a href="">style.css</a></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/css/style.css">style.css</a></td>
                                     <td>Responsive</td>
                                 </tr>
                                 <tr>
+                                    <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/css/reset.css">reset.css</a></td>
+                                    <td>Reset</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/css/jquery.bxslider.css">jquery.bxslider.css</a></td>
+                                    <td>bxslider css</td>
+                                </tr>
+                                <tr>
                                     <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a href="">custom.js </a></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/custom.js">custom.js </a></td>
                                     <td>JavaScript, jQuery</td>
                                 </tr>
                                 <tr>
                                     <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a href="">custom_sub.js</a></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/custom_sub.js">custom_sub.js</a></td>
                                     <td>JavaScript, jQuery</td>
                                 </tr>
                                 <tr>
                                     <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a href="">parallax.min.js</a></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/jquery-1.8.3.min.js">jquery-1.8.3.min.js</a></td>
                                     <td>JavaScript, jQuery</td>
                                 </tr>
                                 <tr>
                                     <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a href="">slider.js</a></td>
-                                    <td>JavaScript, jQuery</td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/jquery.bxslider.js">jquery.bxslider.js</a></td>
+                                    <td>JavaScript, jQuery, Slider</td>
                                 </tr>
                                 <tr>
                                     <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a href="">jquery.bxslider.js</a></td>
-                                    <td>JavaScript, jQuery</td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/parallax.min.js">parallax.min.js</a></td>
+                                    <td>JavaScript, jQuery, Background Css</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/slider.js">slider.js</a></td>
+                                    <td>JavaScript, jQuery, Slider</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <!--work1 end-->
-
+                
+                <div class="work">
+                    <div class="row">
+                        <div class="col-lg-8"><img src="img/work3.png" alt=""></div>
+                        <div class="col-lg-4">
+                            <h5><span>03</span>Gray Sheep</h5>
+                            <dl>
+                                <dt>Viewport</dt>
+                                <dd>반응형</dd><br>
+                                <dt>IE support</dt>
+                                <dd>IE9+</dd><br>
+                                <dt>Palette</dt>
+                                <dd>
+                                    <span style="background:#e80000"></span>
+                                    <span style="background:#000;"></span>
+                                    <span style="background:#425359"></span>
+                                </dd>
+                            </dl>
+                            <p>작업물을 정리하기위한 <span>포트폴리오 사이트</span> 입니다.</p>
+                            <p>좋아하는 색상들과 동물을 이용하여 <br>자유롭게 취항대로 디자인하였습니다. <br>다른 목적 없이 오직 나를 위해 디자인 하여 <br>이전과는 다른 즐거운 마음으로 작업하였습니다.</p>
+                            <p><span>부트스트랩4</span>으로 반응형과 레이아웃을 구축하였고,<br> 작업 초반부터 <span>git을 이용한 버전관리</span>를 하였습니다.</p>
+                            <div class="workBtn text-center">
+                                <a target="_blank" href="https://ezh29.github.io/portfolio/" >Demo</a>
+                                <a target="_blank" href="https://github.com/ezh29/portfolio">Repos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 10%">Category</th>
+                                    <th style="width: 20%">Source</th>
+                                    <th style="width: 70%">Related keywords</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-sm">
+                                <tr>
+                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/index.html">index.html</a></td>
+                                    <td>HTML5, Responsive</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/css/style.css">style.css</a></td>
+                                    <td>Responsive</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/css/reset.css">reset.css</a></td>
+                                    <td>Reset</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/js/jquery-1.8.3.min.js">jquery-1.8.3.min.js</a></td>
+                                    <td>JavaScript, jQuery</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                    <td><a target="_blank" href="https://github.com/ezh29/portfolio/tree/master/unitegallery">unitegallery</a></td>
+                                    <td>JavaScript, jQuery, Gallery, Slider</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--work3 end-->
             </div>
             <!--works end-->
 
@@ -270,7 +371,7 @@
         </div>
         <!--container end-->
         <div class="container-fluid">
-            <div class="contect text-center row" id="box6">
+            <div class="contect text-center row">
                 <div class="col">
                     <div>
                         <h4><span>WEB PUBLISHER</span> <br> Lee Ji Hyun</h4>
