@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Definition -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/animate.min.css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 
 
     <!-- Bootstrap CSS -->
@@ -38,7 +39,6 @@
 </head>
 
 <body>
-    <a href="#" id="Move_Top">TOP</a>
     <script>
         $(window).scroll(function() {
             //$(this).scrollTop():현재 스크롤바의 위치
@@ -55,6 +55,9 @@
             return false;
         });
     </script>
+
+    <a href="#" id="Move_Top">TOP</a>
+
     <div class="wrap">
         <header>
             <h1 class="text-center">Gray</h1>
@@ -74,7 +77,7 @@
         <!--container end-->
         <div class="container-fluid introduce">
             <div class="row ">
-                <div class="col-md-6"><img src="img/profile.png" alt="" style="width: 100%;"></div>
+                <div class="col-md-6"><img src="img/profile.png" alt="이지현 사진" style="width: 100%;"></div>
                 <div class="col-md-6">
                     <h3>Lee Ji Hyun <span>이지현 1991.12.29</span></h3>
                     <h4>a.k.a gray sheep</h4>
@@ -109,7 +112,7 @@
             </div>
 
             <div class="works topSpace">
-                <div class="row subTitle" id="fadeinbottom">
+                <div class="row subTitle">
                     <div class="col text-center">
                         <h4>Port-folio</h4>
                         <h3>Works</h3>
@@ -117,7 +120,7 @@
                 </div>
                 <div class="work">
                     <div class="row">
-                        <div class="col-lg-8"><img src="img/work1.png" alt=""></div>
+                        <div class="col-lg-8"><img src="img/work1.png" alt="작업물1 사진"></div>
                         <div class="col-lg-4">
                             <h5><span>01</span>랜드로버</h5>
                             <dl>
@@ -132,103 +135,191 @@
                                     <span style="background:#999"></span>
                                 </dd>
                             </dl>
-                            <p><span>랜드로버 코리아</span>의 메인페이지와 서브페이지<br>(회사소개, 부서소개, 회원가입, 로그인)를 <br><span>반응형 페이지</span>로 리뉴얼 하였습니다.</p>
+                            <p><span>랜드로버 코리아</span>의 메인페이지와 서브페이지<br>(회사소개, 커뮤니티, 회원가입, 로그인)를 <br><span>반응형 페이지</span>로 리뉴얼 하였습니다.</p>
                             <p>미디어쿼리를 기반으로 반응형작업을 하였고, <br>작업 후반부터 <span>Git을 이용한 버전관리</span>를 하였습니다.</p>
                             <div class="workBtn text-center">
-                                <a target="_blank" href="https://ezh29.github.io/randrover/" >Demo</a>
+                                <a target="_blank" href="https://ezh29.github.io/randrover/">Demo</a>
                                 <a target="_blank" href="https://github.com/ezh29/randrover">Repos</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 10%">Category</th>
-                                    <th style="width: 20%">Source</th>
-                                    <th style="width: 70%">Related keywords</th>
-                                </tr>
-                            </thead>
-                            <tbody class="table-sm">
-                                <tr>
-                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/index.html">index.html</a></td>
-                                    <td>HTML5, Responsive</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/community.html">community.html</a></td>
-                                    <td>HTML5, Responsive</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/story.html">story.html</a></td>
-                                    <td>HTML5, Responsive</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/login.html">login.html</a></td>
-                                    <td>HTML5, Responsive</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/join.html">join.html</a></td>
-                                    <td>HTML5, Responsive</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/css/style.css">style.css</a></td>
-                                    <td>Responsive</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/css/reset.css">reset.css</a></td>
-                                    <td>Reset</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/css/jquery.bxslider.css">jquery.bxslider.css</a></td>
-                                    <td>bxslider css</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/custom.js">custom.js </a></td>
-                                    <td>JavaScript, jQuery</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/custom_sub.js">custom_sub.js</a></td>
-                                    <td>JavaScript, jQuery</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/jquery-1.8.3.min.js">jquery-1.8.3.min.js</a></td>
-                                    <td>JavaScript, jQuery</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/jquery.bxslider.js">jquery.bxslider.js</a></td>
-                                    <td>JavaScript, jQuery, Slider</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/parallax.min.js">parallax.min.js</a></td>
-                                    <td>JavaScript, jQuery, Background Css</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/slider.js">slider.js</a></td>
-                                    <td>JavaScript, jQuery, Slider</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <table class="table">
+                        <colgroup>
+                            <col width="10%">
+                            <col width="20%">
+                            <col width="70%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">Category</th>
+                                <th scope="col">Source</th>
+                                <th scope="col">Related keywords</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-sm">
+                            <tr>
+                                <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/index.html">index.html</a></td>
+                                <td>HTML5, Responsive</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/community.html">community.html</a></td>
+                                <td>HTML5, Responsive</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/story.html">story.html</a></td>
+                                <td>HTML5, Responsive</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/login.html">login.html</a></td>
+                                <td>HTML5, Responsive</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/join.html">join.html</a></td>
+                                <td>HTML5, Responsive</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/css/style.css">style.css</a></td>
+                                <td>Responsive</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/css/reset.css">reset.css</a></td>
+                                <td>Reset</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/css/jquery.bxslider.css">jquery.bxslider.css</a></td>
+                                <td>bxslider css</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/custom.js">custom.js </a></td>
+                                <td>JavaScript, jQuery</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/custom_sub.js">custom_sub.js</a></td>
+                                <td>JavaScript, jQuery</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/jquery-1.8.3.min.js">jquery-1.8.3.min.js</a></td>
+                                <td>JavaScript, jQuery</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/jquery.bxslider.js">jquery.bxslider.js</a></td>
+                                <td>JavaScript, jQuery, Slider</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/parallax.min.js">parallax.min.js</a></td>
+                                <td>JavaScript, jQuery, Background Css</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/randrover/blob/master/js/slider.js">slider.js</a></td>
+                                <td>JavaScript, jQuery, Slider</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <!--work1 end-->
-                
+
                 <div class="work">
                     <div class="row">
-                        <div class="col-lg-8"><img src="img/work3.png" alt=""></div>
+                        <div class="col-lg-8"><img src="img/work2.png" alt="작업물2 사진"></div>
+                        <div class="col-lg-4">
+                            <h5><span>02</span>오산문화재단</h5>
+                            <dl>
+                                <dt>Viewport</dt>
+                                <dd>반응형</dd><br>
+                                <dt>IE support</dt>
+                                <dd>IE9+</dd><br>
+                                <dt>Palette</dt>
+                                <dd>
+                                    <span style="background:#e80000"></span>
+                                    <span style="background:#000;"></span>
+                                    <span style="background:#425359"></span>
+                                </dd>
+                            </dl>
+                            <p><span>오산문화재단</span>의 메인페이지를 <br><span>반응형 페이지</span>로 리뉴얼 하였습니다.</p>
+                            <p>미디어쿼리를 기반으로 반응형작업을 하였고, <br>작업 초반부터 <span>Git을 이용한 버전관리</span>를 하였습니다.</p>
+                            <p><span>배경이 있는 드롭박스</span> 구현과 <br><span>풀 스크린 사이트맵</span> 구현을 중점으로 하였습니다.</p>
+                            <div class="workBtn text-center">
+                                <a target="_blank" href="https://ezh29.github.io/osanCulture/">Demo</a>
+                                <a target="_blank" href="https://github.com/ezh29/osanCulture">Repos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <colgroup>
+                            <col width="10%">
+                            <col width="20%">
+                            <col width="70%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">Category</th>
+                                <th scope="col">Source</th>
+                                <th scope="col">Related keywords</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-sm">
+                            <tr>
+                                <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/osanCulture/blob/master/index.html">index.html</a></td>
+                                <td>HTML5, Responsive</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/osanCulture/blob/master/css/style.css">style.css</a></td>
+                                <td>Responsive</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/osanCulture/blob/master/css/reset.css">reset.css</a></td>
+                                <td>Reset</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/osanCulture/blob/master/js/jquery-2.1.1.min.js">jquery-2.1.1.min.js</a></td>
+                                <td>JavaScript, jQuery</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/osanCulture/blob/master/js/custom.js">custom.js</a></td>
+                                <td>JavaScript, jQuery</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/osanCulture/blob/master/js/instagram.js">instagram.js</a></td>
+                                <td>JavaScript, jQuery, Gallery </td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/osanCulture/blob/master/js/jquery.sliphover.min.js">sliphover.js</a></td>
+                                <td>JavaScript, jQuery, Mouse Effect </td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/osanCulture/blob/master/js/slider.js">slider.js</a></td>
+                                <td>JavaScript, jQuery, slider </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--work2 end-->
+
+                <div class="work">
+                    <div class="row">
+                        <div class="col-lg-8"><img src="img/work3.png" alt="작업물3 사진"></div>
                         <div class="col-lg-4">
                             <h5><span>03</span>Gray Sheep</h5>
                             <dl>
@@ -247,49 +338,52 @@
                             <p>좋아하는 색상들과 동물을 이용하여 <br>자유롭게 취항대로 디자인하였습니다. <br>다른 목적 없이 오직 나를 위해 디자인 하여 <br>이전과는 다른 즐거운 마음으로 작업하였습니다.</p>
                             <p><span>부트스트랩4</span>으로 반응형과 레이아웃을 구축하였고,<br> 작업 초반부터 <span>git을 이용한 버전관리</span>를 하였습니다.</p>
                             <div class="workBtn text-center">
-                                <a target="_blank" href="https://ezh29.github.io/portfolio/" >Demo</a>
+                                <a target="_blank" href="https://ezh29.github.io/portfolio/">Demo</a>
                                 <a target="_blank" href="https://github.com/ezh29/portfolio">Repos</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 10%">Category</th>
-                                    <th style="width: 20%">Source</th>
-                                    <th style="width: 70%">Related keywords</th>
-                                </tr>
-                            </thead>
-                            <tbody class="table-sm">
-                                <tr>
-                                    <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/index.html">index.html</a></td>
-                                    <td>HTML5, Responsive</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/css/style.css">style.css</a></td>
-                                    <td>Responsive</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/css/reset.css">reset.css</a></td>
-                                    <td>Reset</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/js/jquery-1.8.3.min.js">jquery-1.8.3.min.js</a></td>
-                                    <td>JavaScript, jQuery</td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
-                                    <td><a target="_blank" href="https://github.com/ezh29/portfolio/tree/master/unitegallery">unitegallery</a></td>
-                                    <td>JavaScript, jQuery, Gallery, Slider</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <table class="table">
+                        <colgroup>
+                            <col width="10%">
+                            <col width="20%">
+                            <col width="70%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">Category</th>
+                                <th scope="col">Source</th>
+                                <th scope="col">Related keywords</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-sm">
+                            <tr>
+                                <td><button type="button" class="btn btn-success btn-sm">HTML</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/index.html">index.html</a></td>
+                                <td>HTML5, Responsive</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/css/style.css">style.css</a></td>
+                                <td>Responsive</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-primary btn-sm">CSS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/css/reset.css">reset.css</a></td>
+                                <td>Reset</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/portfolio/blob/master/js/jquery-1.8.3.min.js">jquery-1.8.3.min.js</a></td>
+                                <td>JavaScript, jQuery</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-secondary btn-sm">JS</button></td>
+                                <td><a target="_blank" href="https://github.com/ezh29/portfolio/tree/master/unitegallery">unitegallery</a></td>
+                                <td>JavaScript, jQuery, Gallery, Slider</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <!--work3 end-->
             </div>
@@ -400,11 +494,9 @@
             </div>
         </div>
         <!--contect-fluid end-->
-
-
-
     </div>
     <!--wrap end-->
 
 </body>
+
 </html>
