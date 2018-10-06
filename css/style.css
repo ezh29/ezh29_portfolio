@@ -95,6 +95,7 @@ header .scrollDown::after {content: ""; display: block; border-bottom: solid 1px
 .workBtn {margin-top: 30px;}
 .workBtn a {display: inline-block; background: #425359; height: 40px; width: 90px; color:#fff; padding-top: 7px; border: solid 1px #425359; transition: all 0.3s; border-radius: 20px; }
 .workBtn a:hover {border: solid 1px #425359; background: #eee; color:#425359; text-decoration: none;}
+
 /*work table*/
 .table {margin-top: 20px; font:13px/1 'Nanum Gothic', sans-serif; }
 .table  th {background: #425359; color:#fff;}
@@ -102,6 +103,10 @@ header .scrollDown::after {content: ""; display: block; border-bottom: solid 1px
 .table tr td {padding: 5px 10px;}
 .table a {color:#e80000;}
 .table a:hover {color:#e80000; text-decoration: none;}
+
+.table colgroup col:nth-of-type(1) {width: 10%;}
+.table colgroup col:nth-of-type(2) {width: 20%;}
+.table colgroup col:nth-of-type(3) {width: 70%;}
 
 /*contect*/
 .contect {background: url("../img/contect_bg.jpg") center; background-size: cover; padding: 130px 0px; margin-top: 200px;}
@@ -113,9 +118,6 @@ header .scrollDown::after {content: ""; display: block; border-bottom: solid 1px
 .contect li:nth-last-child(1) {margin-bottom: 0px;}
 .contect a {color:#fff;}
 .contect a:hover {color:#fff; text-decoration: none;}
-
-
-
 
 /*타블렛*/
 @media screen and (min-width:640px) and (max-width:939px) {
