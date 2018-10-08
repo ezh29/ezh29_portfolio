@@ -5,8 +5,12 @@ font-family: 'Inknut Antiqua', serif;
 */
 /*font-family: 'Nanum Gothic', sans-serif;*/
 
+
+caption, legend, label, .hidden {visibility:hidden;position:absolute;left:-9999em;width:1px;height:1px;margin:0;padding:0;background:none;font-size:0;line-height:0;text-indent:-9999em}
+
 .wrap {background-color: #eee;}
 .topSpace {margin-top: 180px;}
+
 
 /*top 버튼*/
 body>a {height: 40px; width: 40px; box-shadow: 0 2px 10px 1px rgba(0,0,0,0.12); border-radius: 50%; color: #666; text-align: center; padding-top: 11px; position: fixed; background:#fff; right: 2%; z-index: 9; display: none; transition: all 0.5s; font-size: 12px;}
