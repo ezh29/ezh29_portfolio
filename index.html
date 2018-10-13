@@ -12,7 +12,7 @@
     <meta name="keywords" content="portfolio, web publisher, html, css, javascript">
     <meta name="author" content="JiHyun Lee">
     <meta name="robots" content="index, follow">
-    
+
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                     <table class="table" summary="work1 구성요소">
-                       <caption>work1 구성요소</caption>
+                        <caption>work1 구성요소</caption>
                         <colgroup>
                             <col/>
                             <col/>
@@ -262,7 +262,7 @@
                         </div>
                     </div>
                     <table class="table" summary="work2 구성요소">
-                       <caption>work2 구성요소</caption>
+                        <caption>work2 구성요소</caption>
                         <colgroup>
                             <col/>
                             <col/>
@@ -349,7 +349,7 @@
                         </div>
                     </div>
                     <table class="table" summary="work3 구성요소">
-                       <caption>work3 구성요소</caption>
+                        <caption>work3 구성요소</caption>
                         <colgroup>
                             <col/>
                             <col/>
@@ -397,12 +397,12 @@
 
             <div class="etc topSpace">
                 <div class="row subTitle">
-                    <div class="col text-center" id="box5">
-                        <h4>Editorial Design</h4>
-                        <h3>Etc</h3>
+                    <div class="col text-center">
+                        <h4>Etc</h4>
+                        <h3>Editorial Design</h3>
                     </div>
                 </div>
-                <div id="gallery" style="display:none;">
+                <div id="gallery1" style="display:none;">
                     <a href="#">
 		                <img alt="중원엔지니어링 로고 패키지" src="img/edit/01.png" data-image="img/edit/01.png" data-description="중원엔지니어링 로고 패키지" style="display:none">
 		            </a>
@@ -458,16 +458,37 @@
 		                <img alt="국민은행 트와이스 엽서 2차" src="img/edit/10_2.png" data-image="img/edit/10_2.png" data-description="국민은행 트와이스 엽서 2차" style="display:none">
 		            </a>
                 </div>
-
-                <script type="text/javascript">
-                    jQuery(document).ready(function() {
-
-                        jQuery("#gallery").unitegallery({
-                            tiles_type: "justified"
-                        });
-                    });
-                </script>
             </div>
+            <div class="etc topSpace">
+                <div class="row subTitle">
+                    <div class="col text-center">
+                        <h4>Etc</h4>
+                        <h3>Graphic art</h3>
+                    </div>
+                </div>
+                <div id="gallery2" style="display:none;">
+                    <a href="#">
+		                <img alt="고양이사냥 그래픽아트 이미지" src="img/graphic/cat.png" data-image="img/graphic/cat.png" data-description="고양이사냥 그래픽아트" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="Gray Sheep 그래픽아트 이미지" src="img/graphic/graysheep.png" data-image="img/graphic/graysheep.png" data-description="Gray Sheep 그래픽아트" style="display:none">
+		            </a>
+                    <a href="#">
+		                <img alt="eyechatch 그래픽아트 이미지" src="img/graphic/eyechatch.png" data-image="img/graphic/eyechatch.png" data-description="eyechatch 그래픽아트" style="display:none">
+		            </a>
+                </div>
+            </div>
+            <script type="text/javascript">
+                jQuery(document).ready(function() {
+
+                    jQuery("#gallery1").unitegallery({
+                        tiles_type: "justified"
+                    });
+                    jQuery("#gallery2").unitegallery({
+                        tiles_type: "justified"
+                    });
+                });
+            </script>
         </div>
         <!--container end-->
         <div class="container-fluid">

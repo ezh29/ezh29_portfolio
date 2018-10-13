@@ -81,7 +81,7 @@ header .scrollDown::after {content: ""; display: block; border-bottom: solid 1px
 .subTitle {margin-bottom: 40px; position: relative;}
 .subTitle h4 {font:20px/1 'Nanum Gothic', sans-serif; color:#888; margin-bottom: 40px; z-index: 1;}
 .subTitle h4::after {content: ""; height: 1px; width: 30px; background:#e80000; display: block; position: relative; transform: rotate(-45deg); top:22px; left: 50%; margin-left: -15px; z-index: }
-.subTitle h3 {font:bold 40px/1 'Inknut Antiqua', serif; z-index: 1;}
+.subTitle h3 {font:bold 35px/1 'Inknut Antiqua', serif; z-index: 1;}
 
 /*work*/
 .work {margin-bottom: 100px;}
